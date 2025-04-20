@@ -1,0 +1,79 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "d120af1e8638c7da36c8481fd61a66c0c08dc4fc",
+          "version": "5.4.4"
+        }
+      },
+      {
+        "package": "JTAppleCalendar",
+        "repositoryURL": "https://github.com/patchthecode/JTAppleCalendar",
+        "state": {
+          "branch": null,
+          "revision": "718f0ab68ba0fcd2bc134f6e9d30edc1b9b038e1",
+          "version": "8.0.5"
+        }
+      },
+      {
+        "package": "Lottie",
+        "repositoryURL": "https://github.com/airbnb/lottie-spm.git",
+        "state": {
+          "branch": null,
+          "revision": "8c6edf4f0fa84fe9c058600a4295eb0c01661c69",
+          "version": "4.5.1"
+        }
+      },
+      {
+        "package": "NuggetExternalDependency",
+        "repositoryURL": "https://github.com/BudhirajaRajesh/NuggetExternalDependecy",
+        "state": {
+          "branch": null,
+          "revision": "ce1a869aed43d8af10f99a60f981b5cd2fa19bd4",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "NuggetInternalDependency",
+        "repositoryURL": "https://github.com/BudhirajaRajesh/NuggetInternalDependency",
+        "state": {
+          "branch": null,
+          "revision": "cb25e882efa28bb5e3f5dbce74fb48d9f56930f8",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "Nuke",
+        "repositoryURL": "https://github.com/kean/Nuke.git",
+        "state": {
+          "branch": null,
+          "revision": "0ead44350d2737db384908569c012fe67c421e4d",
+          "version": "12.8.0"
+        }
+      },
+      {
+        "package": "ZMarkupParser",
+        "repositoryURL": "https://github.com/BudhirajaRajesh/ZMarkupParser.git",
+        "state": {
+          "branch": null,
+          "revision": "1a8d300c5535510e54c2881e8de610ff84365608",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "ZNSTextAttachment",
+        "repositoryURL": "https://github.com/BudhirajaRajesh/ZNSTextAttachment",
+        "state": {
+          "branch": null,
+          "revision": "5cbc12dfb3603ff613de51040c42c5a5adfc16dc",
+          "version": "2.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

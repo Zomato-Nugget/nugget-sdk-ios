@@ -8,6 +8,7 @@ public typealias NuggetAuthUserInfo = Nugget.ZChatAuthUserInfo
 public typealias NuggetConversationInfo = Nugget.ZChatConversationInfo
 public typealias NuggetFactory = Nugget.ZChatKitFactory
 public typealias NuggetAuthProviderDelegate = Nugget.ZChatAuthProviderDelegate
+public typealias NuggetPushNotificationsListener = ZChatPushNotificationsListener
 
 public class NuggetSDK {
     public static let shared = NuggetSDK()

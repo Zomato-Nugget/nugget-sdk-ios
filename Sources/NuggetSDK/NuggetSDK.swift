@@ -1,7 +1,5 @@
 // The Swift Programming Language
-import NuggetExternalDependency
 import Nugget
-import NuggetJumbo
 
 public typealias NuggetFactory = Nugget.ZChatKitFactory
 

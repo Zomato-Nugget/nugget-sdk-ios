@@ -14,14 +14,14 @@ let package = Package(
             targets: ["NuggetSDK"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/BudhirajaRajesh/NuggetInternalDependency", .exact("1.0.1")),
-        .package(url: "https://github.com/BudhirajaRajesh/NuggetExternalDependecy", .exact("1.0.0"))
+        .package(url: "https://github.com/BudhirajaRajesh/NuggetInternalDependency", .exact("1.1.1")),
+        .package(url: "https://github.com/BudhirajaRajesh/NuggetExternalDependecy", .exact("1.1.1"))
     ],
     targets: [
         .binaryTarget(
             name: "Nugget",
-            url: "https://github.com/BudhirajaRajesh/Nugget/releases/download/1.0.0/Nugget.xcframework.zip",
-            checksum: "d5c15910269d5f5c750bfd245fc2a6e522ded5c07c84e0ee46088102257de60f"
+            url: "https://github.com/BudhirajaRajesh/NuggetInternalDependency/releases/download/1.1.1-Nugget/Nugget.xcframework.zip",
+            checksum: "d95194da5f24a1e8539b81d8a4de010400799c896f9e8ae272b78d23af0ad793"
         ),
         .target(
             name: "NuggetSDK",

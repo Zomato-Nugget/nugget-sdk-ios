@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/BudhirajaRajesh/NuggetExternalDependecy",
         "state": {
           "branch": null,
-          "revision": "ce1a869aed43d8af10f99a60f981b5cd2fa19bd4",
-          "version": "1.0.0"
+          "revision": "d7f4809a8e6f8c6d2699b2114d03057e3f55bc54",
+          "version": "1.1.1"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/BudhirajaRajesh/NuggetInternalDependency",
         "state": {
           "branch": null,
-          "revision": "cb25e882efa28bb5e3f5dbce74fb48d9f56930f8",
-          "version": "1.0.1"
+          "revision": "d3ec1dd7ab97510c5f87ac5cf00134e40ef9d9f5",
+          "version": "1.1.1"
         }
       },
       {

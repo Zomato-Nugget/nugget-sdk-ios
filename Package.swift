@@ -14,7 +14,8 @@ let package = Package(
             targets: ["NuggetSDK"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/BudhirajaRajesh/NuggetExternalDependecy", .exact("1.1.1"))
+        .package(url: "https://github.com/BudhirajaRajesh/NuggetExternalDependecy", .exact("1.1.1")),
+        .package(url: "https://github.com/BudhirajaRajesh/NuggetInternalDependency", .exact("1.1.4")),
     ],
     targets: [
         .binaryTarget(
@@ -25,6 +26,7 @@ let package = Package(
         .target(
             name: "NuggetSDK",
             dependencies: [
+                .product(name: "NuggetInternalDependency", package: "NuggetInternalDependency"),
                 .product(name: "NuggetExternalDependency", package: "NuggetExternalDependecy"),
                 "Nugget"
             ]),

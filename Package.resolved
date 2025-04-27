@@ -38,15 +38,6 @@
         }
       },
       {
-        "package": "NuggetInternalDependency",
-        "repositoryURL": "https://github.com/BudhirajaRajesh/NuggetInternalDependency",
-        "state": {
-          "branch": null,
-          "revision": "d3ec1dd7ab97510c5f87ac5cf00134e40ef9d9f5",
-          "version": "1.1.1"
-        }
-      },
-      {
         "package": "Nuke",
         "repositoryURL": "https://github.com/kean/Nuke.git",
         "state": {

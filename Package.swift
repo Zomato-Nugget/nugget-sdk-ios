@@ -20,8 +20,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Nugget",
-            url: "https://github.com/BudhirajaRajesh/NuggetInternalDependency/releases/download/1.1.4-Nugget/Nugget.xcframework.zip",
-            checksum: "bbac715f3ea57f16eaa41e50ce520dd4cc9580ff5ca9aa8f5baaa23cf263f444"
+            url: "https://github.com/BudhirajaRajesh/NuggetInternalDependency/releases/download/1.1.5-Nugget/Nugget.xcframework.zip",
+            checksum: "276b5e90a44cb782e377d00c6c69df6aec8056688971fa36eacf4ab6b30a0e40"
         ),
         .target(
             name: "NuggetSDK",

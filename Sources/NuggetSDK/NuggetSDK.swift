@@ -11,6 +11,10 @@ public typealias NuggetThemeProviderDelegate = Nugget.ZChatCustomThemeProviderDe
 public typealias NuggetFontProviderDelegate = Nugget.ZChatCustomFontProviderDelegate
 public typealias NuggetTicketCreationDelegate = Nugget.ZChatTicketCreationHandlerDelegate
 public typealias NuggetPushNotificationsListener = Nugget.ZChatPushNotificationsListener
+public typealias NuggetFontPropertiesMapping = Nugget.FontPropertiesMapping
+public typealias NuggetFontWeights = Nugget.NuggetFontWeights
+public typealias NuggetFontSizes = Nugget.NuggetFontSizes
+public typealias NuggetUserInfo = Nugget.ZChatUserInfo
 
 weak private var nuggetFactory: NuggetFactory?
 

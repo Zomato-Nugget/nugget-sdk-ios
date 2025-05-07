@@ -41,7 +41,7 @@ let package = Package(
         .binaryTarget(
             name: "NuggetApiManager",
             url: "https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.0.1-ZApiManager/ZApiManager.xcframework.zip",
-            checksum: "706d25f4546aaad59ea6933416b7274a206f696c4c81ca3e9b76ce20a4f01d03"
+            checksum: "81463946199f2a6c0abc5226ca8282af64b5435c4ad365473440b9a4b25b99ef"
         ),
         .target(
             name: "NuggetSDK",

@@ -24,28 +24,25 @@ let package = Package(
         // Main Nugget binary
         .binaryTarget(
             name: "Nugget",
-            url: "https://github.com/BudhirajaRajesh/NuggetInternalDependency/releases/download/1.1.13-Nugget/Nugget.xcframework.zip",
+            url: "https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.0.1-Nugget/Nugget.xcframework.zip",
             checksum: "81d0508f089f177c726f96607084d1d575911fe9c99aaec2590ff1b5fac8f781"
         ),
         // Binary targets previously for NuggetInternalDependency, now direct dependencies for NuggetSDK
         .binaryTarget(
             name: "NuggetFoundation",
-            url: "https://github.com/BudhirajaRajesh/NuggetInternalDependency/releases/download/1.1.3-NuggetFoundation/NuggetFoundation.xcframework.zip",
-            checksum: "9409ffb6a4ae1e236463d450286bfb5cdad3b9654aa7339a43b0c487e2ad2620"
+            url: "https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.0.1-NuggetFoundation/NuggetFoundation.xcframework.zip",
+            checksum: "ca1d32c7fb127fbc615221396187b4b972917704bb6c26c7b8b5f3f10c2d2bd5"
         ),
         .binaryTarget(
             name: "NuggetJumbo",
-            url: "https://github.com/BudhirajaRajesh/NuggetInternalDependency/releases/download/1.1.3-NuggetJumbo/NuggetJumbo.xcframework.zip",
-            checksum: "8057fb2cfaa8630f8d7a254bbb04a6503b4840a5c4551575eb08ef0f7ae8e8c4"
+            url: "https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.0.1-NuggetJumbo/NuggetJumbo.xcframework.zip",
+            checksum: "0ead7121dc34fc978abcbadd5200527cce731634c4c8fdbc3435a0ff60217ee6"
         ),
         .binaryTarget(
             name: "NuggetApiManager",
-            url: "https://github.com/BudhirajaRajesh/NuggetInternalDependency/releases/download/1.1.3-ZApiManager/ZApiManager.xcframework.zip",
-            checksum: "25c020bb8f02ee9daebe72229bd60749ea8eb5c4d7b549f7d668feb35beadb29"
+            url: "https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.0.1-ZApiManager/ZApiManager.xcframework.zip",
+            checksum: "706d25f4546aaad59ea6933416b7274a206f696c4c81ca3e9b76ce20a4f01d03"
         ),
-        // NuggetInternalDependency and NuggetExternalDependency targets are removed.
-        // Their sources should be copied into Sources/NuggetSDK/
-        // and their dependencies are now direct dependencies of the NuggetSDK target.
         .target(
             name: "NuggetSDK",
             dependencies: [
@@ -61,9 +58,6 @@ let package = Package(
                 .product(name: "ZMarkupParser", package: "ZMarkupParser"),
                 .product(name: "Alamofire", package: "Alamofire")
             ]
-            // Sources for NuggetSDK will now also include sources from
-            // what were NuggetInternalDependency and NuggetExternalDependency.
-            // Assumed to be in Sources/NuggetSDK/
         ),
         .testTarget(
             name: "NuggetSDKTests",

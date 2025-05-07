@@ -20,24 +20,6 @@
         }
       },
       {
-        "package": "NuggetExternalDependency",
-        "repositoryURL": "https://github.com/BudhirajaRajesh/NuggetExternalDependecy",
-        "state": {
-          "branch": null,
-          "revision": "1583a107b37971a52aeb381cf4823b714f8410aa",
-          "version": "1.1.6"
-        }
-      },
-      {
-        "package": "NuggetInternalDependency",
-        "repositoryURL": "https://github.com/BudhirajaRajesh/NuggetInternalDependency",
-        "state": {
-          "branch": null,
-          "revision": "8013f03bbfd3f0e65cdf417422c3d0b9696a5d08",
-          "version": "1.1.4"
-        }
-      },
-      {
         "package": "Nuke",
         "repositoryURL": "https://github.com/kean/Nuke.git",
         "state": {

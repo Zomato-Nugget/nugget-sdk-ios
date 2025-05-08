@@ -39,6 +39,7 @@ public func initializeNuggetFactory(authDelegate: NuggetAuthProviderDelegate,
                                           customThemeProviderDelegate: customThemeProviderDelegate,
                                           customFontProviderDelegate: customFontProviderDelegate,
                                           ticketCreationDelegate: ticketCreationDelegate,
+                                          chatBusinessContextProviderDelegate: chatBusinessContextDelegate,
                                           deeplinkListener: deeplinkListener)
     nuggetFactory = tempNuggetFactory
     return tempNuggetFactory

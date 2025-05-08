@@ -29,9 +29,10 @@ public func initializeNuggetFactory(authDelegate: NuggetAuthProviderDelegate, no
 
 public func initializeNuggetFactory(authDelegate: NuggetAuthProviderDelegate,
                                     notificationDelegate: NuggetPushNotificationsListener,
+                                    chatBusinessContextDelegate: NuggetBusinessContextProviderDelegate? = nil,
+                                    deeplinkListener: NuggetDeeplinkListener? = nil,
                                     customThemeProviderDelegate: NuggetThemeProviderDelegate? = nil,
                                     customFontProviderDelegate: NuggetFontProviderDelegate? = nil,
-                                    deeplinkListener: NuggetDeeplinkListener? = nil,
                                     ticketCreationDelegate: NuggetTicketCreationDelegate? = nil) -> NuggetFactory {
     let tempNuggetFactory = NuggetFactory(authManagerDelegate: authDelegate,
                                           pushNotificationsManager: notificationDelegate,

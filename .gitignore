@@ -1,1 +1,6 @@
 .swiftpm
+*.xcframework
+.build
+CocoaPodTestApp.xcworkspace/xcuserdata
+Pods
+.DS_Store

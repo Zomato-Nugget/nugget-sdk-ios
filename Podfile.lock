@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (5.10.2)
+  - JTAppleCalendar (8.0.5)
+  - NuggetSDK (0.1.0):
+    - Alamofire (~> 5.10.2)
+    - JTAppleCalendar (= 8.0.5)
+    - Nuke (= 10.7.1)
+    - ZMarkupParser (~> 2.0.3)
+  - Nuke (10.7.1)
+  - ZMarkupParser (2.0.6)
+
+DEPENDENCIES:
+  - NuggetSDK (from `.`)
+  - ZMarkupParser (from `https://github.com/BudhirajaRajesh/ZMarkupParser.git`, tag `2.0.6`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - JTAppleCalendar
+    - Nuke
+
+EXTERNAL SOURCES:
+  NuggetSDK:
+    :path: "."
+  ZMarkupParser:
+    :git: https://github.com/BudhirajaRajesh/ZMarkupParser.git
+    :tag: 2.0.6
+
+CHECKOUT OPTIONS:
+  ZMarkupParser:
+    :git: https://github.com/BudhirajaRajesh/ZMarkupParser.git
+    :tag: 2.0.6
+
+SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  JTAppleCalendar: 16c6501b22cb27520372c28b0a2e0b12c8d0cd73
+  NuggetSDK: 6b1be45381e8133ceb85a91e6e1b4ebb0800ca8d
+  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
+  ZMarkupParser: 09c948e0b0b1b6df9c8c5451182ac368dc07830a
+
+PODFILE CHECKSUM: 5765c1aa15df20351651aac97b8ac4f4292de713
+
+COCOAPODS: 1.16.2

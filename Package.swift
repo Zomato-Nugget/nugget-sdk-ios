@@ -16,8 +16,8 @@ let package = Package(
     dependencies: [
         // Dependencies previously managed by NuggetExternalDependency, now direct
         .package(url: "https://github.com/patchthecode/JTAppleCalendar", .exact("8.0.5")),
-        .package(url: "https://github.com/kean/Nuke.git", .exact("12.8.0")),
-        .package(url: "https://github.com/BudhirajaRajesh/ZMarkupParser.git", .exact("2.0.0")),
+        .package(url: "https://github.com/kean/Nuke.git", .exact("10.7.1")),
+        .package(url: "https://github.com/BudhirajaRajesh/ZMarkupParser.git", .exact("2.0.5")),
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.10.2"))
     ],
     targets: [
@@ -54,7 +54,6 @@ let package = Package(
                 // Products from former NuggetExternalDependency
                 .product(name: "JTAppleCalendar", package: "JTAppleCalendar"),
                 .product(name: "Nuke", package: "Nuke"),
-                .product(name: "NukeExtensions", package: "Nuke"),
                 .product(name: "ZMarkupParser", package: "ZMarkupParser"),
                 .product(name: "Alamofire", package: "Alamofire")
             ]

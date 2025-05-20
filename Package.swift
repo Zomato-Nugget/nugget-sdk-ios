@@ -24,8 +24,8 @@ let package = Package(
         // Main Nugget binary
         .binaryTarget(
             name: "Nugget",
-            url: "https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.0.7-Nugget/Nugget.xcframework.zip",
-            checksum: "d0b0eafc488ad2cec4c31bc816931e2216fed8a8f1b8bec1ce9d660250679a75"
+            url: "https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.0.8-Nugget/Nugget.xcframework.zip",
+            checksum: "a68453ca6d8f58d8e84fd3bb3f0e4112b2a4d8c12895c816c229c441fae99f4c"
         ),
         // Binary targets previously for NuggetInternalDependency, now direct dependencies for NuggetSDK
         .binaryTarget(

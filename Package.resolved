@@ -33,17 +33,8 @@
         "repositoryURL": "https://github.com/BudhirajaRajesh/ZMarkupParser.git",
         "state": {
           "branch": null,
-          "revision": "1d2591722f9ab606becd27619765982aabb8354f",
-          "version": "2.0.5"
-        }
-      },
-      {
-        "package": "ZNSTextAttachment",
-        "repositoryURL": "https://github.com/BudhirajaRajesh/ZNSTextAttachment",
-        "state": {
-          "branch": null,
-          "revision": "638457deb7be677749419fb14972ec83ebeadccb",
-          "version": "2.0.2"
+          "revision": "6a0702fcb8a84e0d2045cae7535bffad6f0825d1",
+          "version": "2.0.6"
         }
       }
     ]

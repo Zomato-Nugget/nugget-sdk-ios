@@ -6,12 +6,14 @@ public typealias NuggetFactory = Nugget.ZChatKitFactory
 public typealias NuggetAuthUserInfo = Nugget.ZChatAuthUserInfo
 public typealias NuggetConversationInfo = Nugget.ZChatConversationInfo
 public typealias NuggetChatBusinessContext = Nugget.ZChatBusinessContext
+public typealias NuggetJumborConfiguration = Nugget.NuggetJumborConfiguration
 
 public typealias NuggetAuthProviderDelegate = Nugget.ZChatAuthProviderDelegate
 public typealias NuggetThemeProviderDelegate = Nugget.ZChatCustomThemeProviderDelegate
 public typealias NuggetFontProviderDelegate = Nugget.ZChatCustomFontProviderDelegate
 public typealias NuggetTicketCreationDelegate = Nugget.ZChatTicketCreationHandlerDelegate
 public typealias NuggetBusinessContextProviderDelegate = Nugget.ZChatBusinessContextProviderDelegate
+public typealias NuggetSDkConfigurationDelegate = Nugget.NuggetSDkConfigurationDelegate
 public typealias NuggetPushNotificationsListener = Nugget.ZChatPushNotificationsListener
 public typealias NuggetFontPropertiesMapping = Nugget.FontPropertiesMapping
 public typealias NuggetFontWeights = Nugget.NuggetFontWeights
@@ -21,14 +23,9 @@ public typealias NuggetDeeplinkListener = Nugget.ZChatDeeplinkListener
 
 weak private var nuggetFactory: NuggetFactory?
 
-public func initializeNuggetFactory(authDelegate: NuggetAuthProviderDelegate, notificationDelegate: NuggetPushNotificationsListener, chatBusinessContextDelegate: NuggetBusinessContextProviderDelegate? = nil) -> NuggetFactory {
-    let tempNuggetFactory = NuggetFactory(authManagerDelegate: authDelegate, pushNotificationsManager: notificationDelegate, chatBusinessContextProviderDelegate: chatBusinessContextDelegate)
-    nuggetFactory = tempNuggetFactory
-    return tempNuggetFactory
-}
-
 public func initializeNuggetFactory(authDelegate: NuggetAuthProviderDelegate,
                                     notificationDelegate: NuggetPushNotificationsListener,
+                                    sdkConfigurationDelegate: NuggetSDkConfigurationDelegate,
                                     chatBusinessContextDelegate: NuggetBusinessContextProviderDelegate? = nil,
                                     deeplinkListener: NuggetDeeplinkListener? = nil,
                                     customThemeProviderDelegate: NuggetThemeProviderDelegate? = nil,
@@ -36,6 +33,7 @@ public func initializeNuggetFactory(authDelegate: NuggetAuthProviderDelegate,
                                     ticketCreationDelegate: NuggetTicketCreationDelegate? = nil) -> NuggetFactory {
     let tempNuggetFactory = NuggetFactory(authManagerDelegate: authDelegate,
                                           pushNotificationsManager: notificationDelegate,
+                                          nuggetSDkConfigurationDelegate: sdkConfigurationDelegate,
                                           customThemeProviderDelegate: customThemeProviderDelegate,
                                           customFontProviderDelegate: customFontProviderDelegate,
                                           ticketCreationDelegate: ticketCreationDelegate,

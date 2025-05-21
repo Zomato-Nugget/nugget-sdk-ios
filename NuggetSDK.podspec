@@ -35,8 +35,8 @@ Pod::Spec.new do |s|
     }
 
     echo "Downloading and unzipping Nugget..."
-    curl -L https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.0.8-Nugget/Nugget.xcframework.zip -o Nugget.xcframework.zip
-    verify_checksum "Nugget.xcframework.zip" "a68453ca6d8f58d8e84fd3bb3f0e4112b2a4d8c12895c816c229c441fae99f4c"
+    curl -L https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.0.9-Nugget/Nugget.xcframework.zip -o Nugget.xcframework.zip
+    verify_checksum "Nugget.xcframework.zip" "7bf0ae4c85a6c7b16c768145f309438615805ab62941583fe0fbb61007b7ee7a"
     unzip -o Nugget.xcframework.zip
     rm Nugget.xcframework.zip
 

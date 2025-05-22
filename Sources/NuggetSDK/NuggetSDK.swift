@@ -23,6 +23,10 @@ public typealias NuggetDeeplinkListener = Nugget.ZChatDeeplinkListener
 
 weak private var nuggetFactory: NuggetFactory?
 
+public func isValidNuggetDeeplink(deeplink: String) -> Bool {
+    return NuggetFactory.canOpenDeeplink(deeplink: deeplink)
+}
+
 public func initializeNuggetFactory(authDelegate: NuggetAuthProviderDelegate,
                                     notificationDelegate: NuggetPushNotificationsListener,
                                     sdkConfigurationDelegate: NuggetSDkConfigurationDelegate,

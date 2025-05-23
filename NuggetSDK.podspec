@@ -1,14 +1,14 @@
 Pod::Spec.new do |s|
   s.name             = 'NuggetSDK'
-  s.version          = '0.1.0' # Replace with your starting version
+  s.version          = '0.0.1'
   s.summary          = 'The Nugget SDK for iOS.'
   s.description      = <<-DESC
                      A longer description of NuggetSDK.
                      DESC
   s.homepage         = 'https://github.com/Zomato-Nugget/nugget-sdk-ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' } # Assuming MIT, create a LICENSE file if you don't have one
-  s.author           = { 'Your Company' => 'mobile-dev@your_company.com' } # Replace with your author details
-  s.source           = { :git => 'https://github.com/Zomato-Nugget/nugget-sdk-ios', :tag => s.version.to_s } # Replace with your git repo
+  s.author           = { 'Zomato' => 'rajesh.budhiraja@zomato.com' }
+  s.source           = { :git => 'https://github.com/Zomato-Nugget/nugget-sdk-ios'}
 
   s.ios.deployment_target = '14.0'
   s.swift_versions = ['5.0']

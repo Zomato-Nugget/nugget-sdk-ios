@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
   # External dependencies
   s.dependency 'JTAppleCalendar', '8.0.5'
   s.dependency 'Alamofire', '~> 5.10.2'
-  s.dependency 'ZMarkupParser', '~> 2.0.6'
   s.dependency 'Nuke', '10.7.1'
   
   # Download and prepare all required XCFrameworks with checksum verification
@@ -35,8 +34,8 @@ Pod::Spec.new do |s|
     }
 
     echo "Downloading and unzipping Nugget..."
-    curl -L https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.0.9-Nugget/Nugget.xcframework.zip -o Nugget.xcframework.zip
-    verify_checksum "Nugget.xcframework.zip" "7bf0ae4c85a6c7b16c768145f309438615805ab62941583fe0fbb61007b7ee7a"
+    curl -L https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.6-Nugget/Nugget.xcframework.zip -o Nugget.xcframework.zip
+    verify_checksum "Nugget.xcframework.zip" "8e76690a7c9c03f0c964e9b1dfe736ef8e208089755f41b1e68f4327eaf8601e"
     unzip -o Nugget.xcframework.zip
     rm Nugget.xcframework.zip
 

@@ -9,9 +9,5 @@ target 'CocoaPodTestApp' do
   
   # Main SDK pod that includes all dependencies
   pod 'NuggetSDK', :path => '.'
-  
-  # External dependencies
-  pod 'ZMarkupParser', :git => 'https://github.com/BudhirajaRajesh/ZMarkupParser.git', :tag => '2.0.6'
-  
-  project 'CocoaPodTestApp/CocoaPodTestApp.xcodeproj'
+
 end 

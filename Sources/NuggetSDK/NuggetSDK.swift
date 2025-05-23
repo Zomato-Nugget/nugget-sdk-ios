@@ -6,7 +6,7 @@ public typealias NuggetFactory = Nugget.ZChatKitFactory
 public typealias NuggetAuthUserInfo = Nugget.ZChatAuthUserInfo
 public typealias NuggetConversationInfo = Nugget.ZChatConversationInfo
 public typealias NuggetChatBusinessContext = Nugget.ZChatBusinessContext
-public typealias NuggetJumborConfiguration = Nugget.NuggetJumborConfiguration
+public typealias NuggetJumboConfiguration = Nugget.NuggetJumborConfiguration
 
 public typealias NuggetAuthProviderDelegate = Nugget.ZChatAuthProviderDelegate
 public typealias NuggetThemeProviderDelegate = Nugget.ZChatCustomThemeProviderDelegate

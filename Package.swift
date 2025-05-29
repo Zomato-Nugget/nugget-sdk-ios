@@ -16,7 +16,7 @@ let package = Package(
     dependencies: [
         // Dependencies previously managed by NuggetExternalDependency, now direct
         .package(url: "https://github.com/patchthecode/JTAppleCalendar", .exact("8.0.5")),
-        .package(url: "https://github.com/kean/Nuke.git", .exact("12.8.0")),
+        .package(url: "https://github.com/kean/Nuke.git", .exact("10.7.1")),
         .package(url: "https://github.com/BudhirajaRajesh/ZMarkupParser.git", .exact("2.0.0")),
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.10.2"))
     ],
@@ -24,24 +24,24 @@ let package = Package(
         // Main Nugget binary
         .binaryTarget(
             name: "Nugget",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.1-Nugget/Nugget.xcframework.zip",
-            checksum: "a11f9ef60028f38f2de8ff0953e1aa247baf6be93e0cfff3dbf460ddf079240b"
+            url: "https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.1.2-Nugget/Nugget.xcframework.zip",
+            checksum: "25a301c4bb30fc253834cfe6d3c8d7eef6149ef147b8838faf42ebc786ec6041"
         ),
         // Binary targets previously for NuggetInternalDependency, now direct dependencies for NuggetSDK
         .binaryTarget(
             name: "NuggetFoundation",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.1-Foundation/NuggetFoundation.xcframework.zip",
-            checksum: "7173cf9d6b428f9903605ddb53a4376e73adf6dbb60342a3d385d9fb5a7a41b7"
+            url: "https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.1.2-NuggetFoundation/NuggetFoundation.xcframework.zip",
+            checksum: "7daad184becf5a19f4d4a8657fe11187e2354de3d72eb1dfd7c49645487e4f03"
         ),
         .binaryTarget(
             name: "NuggetJumbo",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.1-Jumbo/NuggetJumbo.xcframework.zip",
-            checksum: "3d31b79dcda091b9ece81a2a76d8b32b6350e539f38202ab5786733ac65202c5"
+            url: "https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.1.2-NuggetJumbo/NuggetJumbo.xcframework.zip",
+            checksum: "85a1b62bfbf84c4b7422f720683fedf66a8fa7579cfbe3315eac850f643550f7"
         ),
         .binaryTarget(
             name: "NuggetApiManager",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.1-ApiManager/ZApiManager.xcframework.zip",
-            checksum: "7fce6112c32948830046c82ce045590327c8c442a6aee00d7aef773db6f6b0cb"
+            url: "https://github.com/BudhirajaRajesh/NuggetSDK/releases/download/0.1.2-ZApiManager/ZApiManager.xcframework.zip",
+            checksum: "9999ca464cadd3751ace81e33d6b6d18c6cc3d92b1dcc53662bc750e4c51b017"
         ),
         .target(
             name: "NuggetSDK",
@@ -54,7 +54,6 @@ let package = Package(
                 // Products from former NuggetExternalDependency
                 .product(name: "JTAppleCalendar", package: "JTAppleCalendar"),
                 .product(name: "Nuke", package: "Nuke"),
-                .product(name: "NukeExtensions", package: "Nuke"),
                 .product(name: "ZMarkupParser", package: "ZMarkupParser"),
                 .product(name: "Alamofire", package: "Alamofire")
             ]

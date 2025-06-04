@@ -11,14 +11,12 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/Zomato-Nugget/nugget-sdk-ios'}
 
   s.ios.deployment_target = '14.0'
-  s.swift_versions = ['5.0']
-
   s.source_files = 'Sources/NuggetSDK/**/*.swift'
 
   # External dependencies
-  s.dependency 'JTAppleCalendar', '8.0.5'
-  s.dependency 'Alamofire', '~> 5.10.2'
-  s.dependency 'Nuke', '10.7.1'
+  #s.dependency 'JTAppleCalendar', '8.0.5'
+  #s.dependency 'Alamofire', '~> 5.10.2'
+  #s.dependency 'Nuke', '10.7.1'
   
   # Download and prepare all required XCFrameworks with checksum verification
   s.prepare_command = <<-CMD

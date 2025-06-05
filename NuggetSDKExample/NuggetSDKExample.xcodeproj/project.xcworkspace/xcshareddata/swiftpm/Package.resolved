@@ -1,0 +1,42 @@
+{
+  "originHash" : "dbc26354c55f220b7d5ea04ea62314f07a8d6038d9e3c444905c97e701bbfa4f",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
+      }
+    },
+    {
+      "identity" : "jtapplecalendar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/patchthecode/JTAppleCalendar",
+      "state" : {
+        "revision" : "718f0ab68ba0fcd2bc134f6e9d30edc1b9b038e1",
+        "version" : "8.0.5"
+      }
+    },
+    {
+      "identity" : "nugget-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Zomato-Nugget/nugget-sdk-ios",
+      "state" : {
+        "revision" : "7001d3b605fd78d36c588fc6166a08406c668a0d",
+        "version" : "0.0.8"
+      }
+    },
+    {
+      "identity" : "nuke",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Nuke.git",
+      "state" : {
+        "revision" : "78fa963b8491fc520791d8c2a509f1b8593d8aae",
+        "version" : "10.7.1"
+      }
+    }
+  ],
+  "version" : 3
+}

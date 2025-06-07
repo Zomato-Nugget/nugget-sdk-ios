@@ -23,24 +23,24 @@ let package = Package(
         // Main Nugget binary
         .binaryTarget(
             name: "Nugget",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.7-Nugget/Nugget.xcframework.zip",
-            checksum: "185effbdede179d9e33a51f37042d4a87a2266db580a559371abeb15f26b30be"
+            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.8-Nugget/Nugget_xcframework_with_dsyms.zip",
+            checksum: "a402dadc9e0159a641c5b7a6adea438c0a3ecd1ccb874f59b32869d4161760bb"
         ),
         // Binary targets previously for NuggetInternalDependency, now direct dependencies for NuggetSDK
         .binaryTarget(
             name: "NuggetFoundation",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.1-Foundation/NuggetFoundation.xcframework.zip",
-            checksum: "7173cf9d6b428f9903605ddb53a4376e73adf6dbb60342a3d385d9fb5a7a41b7"
+            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.2-Foundation/NuggetFoundation.xcframework.zip",
+            checksum: "bac60616a9c27b2fb2d5564324be369c75d6460238891e7f7163dcafe3516922"
         ),
         .binaryTarget(
             name: "NuggetJumbo",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.1-Jumbo/NuggetJumbo.xcframework.zip",
-            checksum: "3d31b79dcda091b9ece81a2a76d8b32b6350e539f38202ab5786733ac65202c5"
+            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.2-Jumbo/NuggetJumbo_xcframework_with_dsyms.zip",
+            checksum: "f948156ca7185014e7a9fde0efb1222a8201e677c51a37ffc94902db06cb1b2d"
         ),
         .binaryTarget(
             name: "NuggetApiManager",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.1-ApiManager/ZApiManager.xcframework.zip",
-            checksum: "7fce6112c32948830046c82ce045590327c8c442a6aee00d7aef773db6f6b0cb"
+            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.2-ApiManager/ZApiManager_xcframework_with_dsyms.zip",
+            checksum: "8d2d4cd17a4988a0c68b2950a100d73a2fc3233822ceb4f573cabc6733e58015"
         ),
         .target(
             name: "NuggetSDK",

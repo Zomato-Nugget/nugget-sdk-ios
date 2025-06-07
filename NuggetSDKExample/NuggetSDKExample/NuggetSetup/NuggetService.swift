@@ -47,7 +47,9 @@ extension NuggetService : NuggetAuthProviderDelegate {
     }
 }
 
-extension NuggetService: NuggetSDkConfigurationDelegate {
+extension NuggetService: NuggetSDKConfigurationDelegate {
+    func chatScreenClosedCallback() {}
+    
     func jumboConfiguration(completion: @escaping (NuggetJumboConfiguration) -> Void) {
         completion(jumboConfiguration())
     }
@@ -59,13 +61,15 @@ extension NuggetService: NuggetSDkConfigurationDelegate {
 
 extension NuggetService: NuggetBusinessContextProviderDelegate {
     struct ChatSupportBusinessContext: NuggetChatBusinessContext {
+        var type: String?
+        var ticketID: Int?
         var channelHandle: String?
         var ticketGroupingId: String?
         var ticketProperties: [String : [String]]?
         var botProperties: [String : [String]]?
     }
     
-    func chatSupportBusingessContext() -> any NuggetChatBusinessContext {
+    func chatSupportBusinessContext() -> any NuggetChatBusinessContext {
         ChatSupportBusinessContext()
     }
 }
@@ -73,11 +77,11 @@ extension NuggetService: NuggetBusinessContextProviderDelegate {
 extension NuggetService: NuggetThemeProviderDelegate {
     // this will be default color used in sdk for light mode
     var defaultLightModeAccentHexColor: String {
-        "0x7C8363"
+        "#7C8363"
     }
     // this will be default color used in sdk for dark mode
-    var defaultDarktModeAccentHexColor: String {
-        "0x31473A"
+    var defaultDarkModeAccentHexColor: String {
+        "#31473A"
     }
     var deviceInterfaceStyle: UIUserInterfaceStyle {
         .unspecified

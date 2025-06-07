@@ -595,7 +595,7 @@
 			repositoryURL = "https://github.com/Zomato-Nugget/nugget-sdk-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.8;
+				minimumVersion = 0.0.10;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

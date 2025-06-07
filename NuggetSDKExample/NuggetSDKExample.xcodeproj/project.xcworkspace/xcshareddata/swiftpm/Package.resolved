@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Zomato-Nugget/nugget-sdk-ios",
       "state" : {
-        "revision" : "7001d3b605fd78d36c588fc6166a08406c668a0d",
-        "version" : "0.0.8"
+        "revision" : "bb08935b28e46e50f2a1ff2774469c9afb1d918e",
+        "version" : "0.0.10"
       }
     },
     {

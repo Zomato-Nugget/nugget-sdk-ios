@@ -40,7 +40,7 @@ let package = Package(
         .binaryTarget(
             name: "NuggetApiManager",
             url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.2-ApiManager/ZApiManager.xcframework.zip",
-            checksum: "8d2d4cd17a4988a0c68b2950a100d73a2fc3233822ceb4f573cabc6733e58015"
+            checksum: "722d70d3072629f8a51e99b9e2283047204c694c5a3629640d78b74ff0ce9cbf"
         ),
         .target(
             name: "NuggetSDK",

@@ -35,7 +35,7 @@ let package = Package(
         .binaryTarget(
             name: "NuggetJumbo",
             url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.2-Jumbo/NuggetJumbo.xcframework.zip",
-            checksum: "f948156ca7185014e7a9fde0efb1222a8201e677c51a37ffc94902db06cb1b2d"
+            checksum: "7ba9883d3361002b33d9e093e6b67fabddea03180410f5aedfa3e6ab44e4a83a"
         ),
         .binaryTarget(
             name: "NuggetApiManager",

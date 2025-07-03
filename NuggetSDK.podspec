@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NuggetSDK'
-  s.version          = '4.0.1'
+  s.version          = '4.0.2'
   s.summary          = 'The Nugget SDK for iOS.'
   s.description      = <<-DESC
                      A longer description of NuggetSDK.
@@ -34,8 +34,8 @@ Pod::Spec.new do |s|
     }
 
     echo "Downloading and unzipping Nugget..."
-    curl -L https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.13-Nugget/Nugget.xcframework.zip -o Nugget.xcframework.zip
-    verify_checksum "Nugget.xcframework.zip" "69ef14a3ba966e049c3a040912843ee39af2f24a8060264a537840521d9575fe"
+    curl -L https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.14-Nugget/Nugget.xcframework.zip -o Nugget.xcframework.zip
+    verify_checksum "Nugget.xcframework.zip" "8e71c8da3204d242037c65571108a62f72139b75d55cc75cb0c0f496054fd4a5"
     unzip -o Nugget.xcframework.zip
     rm Nugget.xcframework.zip
 

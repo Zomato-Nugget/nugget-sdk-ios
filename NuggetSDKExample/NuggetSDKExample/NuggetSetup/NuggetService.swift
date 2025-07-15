@@ -11,6 +11,7 @@ import UIKit
 
 final class NuggetService {
     
+    let ACCESS_TOKEN = "ACCESS_TOKEN_GOES_HERE"
     private var pushNotificationPublisher = NuggetPushNotificationsListener(apnsToken: UserDefaults.standard.string(forKey: "deviceToken"))
     
     lazy var factory = initializeNuggetFactory(authDelegate: self,
@@ -39,11 +40,11 @@ extension NuggetService : NuggetAuthProviderDelegate {
     
     func authManager(requiresAuthInfo completion: @escaping ((NuggetAuthUserInfo)?, (any Error)?) -> Void) {
         //Make api call to fetch access token or fetch it from cache
-        completion(NuggetAuthUserInfoImp(accessToken: "dummy-access-token"), nil)
+        completion(NuggetAuthUserInfoImp(accessToken: ACCESS_TOKEN), nil)
     }
     func authManager(requestRefreshAuthInfo completion: @escaping ((NuggetAuthUserInfo)?, (any Error)?) -> Void) {
         //Access token is expired. Refresh it and return it.
-        completion(NuggetAuthUserInfoImp(accessToken: "dummy-access-token"), nil)
+        completion(NuggetAuthUserInfoImp(accessToken: ACCESS_TOKEN), nil)
     }
 }
 

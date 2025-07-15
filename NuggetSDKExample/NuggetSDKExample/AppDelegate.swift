@@ -11,7 +11,27 @@ import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
-
+    
+    var shouldShowLockScreen: Bool = false
+    
+    private lazy var appLockView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.white // Or any other color/image for your app lock screen
+        view.translatesAutoresizingMaskIntoConstraints = false
+        // Add any additional UI elements to this view if needed, e.g., a logo or a message
+        let label = UILabel()
+        label.text = "App Locked"
+        label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        label.textColor = .black
+        label.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(label)
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
+        return view
+    }()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Set notification delegate
         UNUserNotificationCenter.current().delegate = self
@@ -27,11 +47,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 print("Push notification permission error: \(error.localizedDescription)")
             }
         }
+        setupAppLockObservers()
         return true
     }
-
+    
     // MARK: UISceneSession Lifecycle
-
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
@@ -75,3 +96,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
 }
 
+
+private extension AppDelegate {
+    // MARK: - App Lock Handling
+    func setupAppLockObservers() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(appWillResignActive),
+            name: UIScene.willDeactivateNotification,
+            object: nil
+        )
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(appDidBecomeActive),
+            name: UIScene.didActivateNotification,
+            object: nil
+        )
+    }
+    
+    @objc func appWillResignActive() {
+        // App is going to background or inactive state, show app lock screen
+        if shouldShowLockScreen {
+            addAppLockView()
+        }
+    }
+    
+    @objc func appDidBecomeActive() {
+        // App is coming to foreground, remove app lock screen
+        if shouldShowLockScreen {
+            removeAppLockView()
+        }
+    }
+    
+    func addAppLockView() {
+        guard let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) else { return }
+        guard !appLockView.isDescendant(of: window) else { return } // Avoid adding multiple times
+        window.addSubview(appLockView)
+        NSLayoutConstraint.activate([
+            appLockView.topAnchor.constraint(equalTo: window.topAnchor),
+            appLockView.leadingAnchor.constraint(equalTo: window.leadingAnchor),
+            appLockView.trailingAnchor.constraint(equalTo: window.trailingAnchor),
+            appLockView.bottomAnchor.constraint(equalTo: window.bottomAnchor)
+        ])
+        window.bringSubviewToFront(appLockView)
+    }
+    
+    func removeAppLockView() {
+        appLockView.removeFromSuperview()
+    }
+}

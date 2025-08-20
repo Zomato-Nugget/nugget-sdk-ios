@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NuggetSDK'
-  s.version          = '4.0.9'
+  s.version          = '4.1.0'
   s.summary          = 'The Nugget SDK for iOS.'
   s.description      = <<-DESC
                      A longer description of NuggetSDK.
@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/NuggetSDK/**/*.swift'
 
   # External dependencies
-  s.dependency 'JTAppleCalendar', '8.0.5'
   s.dependency 'Alamofire', '~> 5.10.2'
   s.dependency 'Nuke', '10.7.1'
   
@@ -34,8 +33,8 @@ Pod::Spec.new do |s|
     }
 
     echo "Downloading and unzipping Nugget..."
-    curl -L https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/4.0.9-Nugget/Nugget.xcframework.zip -o Nugget.xcframework.zip
-    verify_checksum "Nugget.xcframework.zip" "52032ea51acaf5e2fe37002ed85efca08975d95a70b73aeaed7a231aae9868ab"
+    curl -L https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/4.1.0-Nugget/Nugget.xcframework.zip -o Nugget.xcframework.zip
+    verify_checksum "Nugget.xcframework.zip" "456ead78330c45d9f7af0db41b67070bfefa12cb6e23c83cc8336d20a9ede7c6"
     unzip -o Nugget.xcframework.zip
     rm Nugget.xcframework.zip
 

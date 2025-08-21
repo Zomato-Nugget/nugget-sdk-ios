@@ -13,18 +13,12 @@ let package = Package(
             name: "NuggetSDK",
             targets: ["NuggetSDK"]),
     ],
-    dependencies: [
-        // Dependencies previously managed by NuggetExternalDependency, now direct
-        .package(url: "https://github.com/patchthecode/JTAppleCalendar", .exact("8.0.5")),
-        .package(url: "https://github.com/kean/Nuke.git", .exact("10.7.1")),
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.10.2"))
-    ],
     targets: [
         // Main Nugget binary
         .binaryTarget(
             name: "Nugget",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/4.1.0-Nugget/Nugget.xcframework.zip",
-            checksum: "456ead78330c45d9f7af0db41b67070bfefa12cb6e23c83cc8336d20a9ede7c6"
+            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/99.0.7-Nugget/Nugget.xcframework.zip",
+            checksum: "ec06c16b2095a42b0cd3f1e78b266541e93b4b4b7904cd3d91747727eedc1110"
         ),
         // Binary targets previously for NuggetInternalDependency, now direct dependencies for NuggetSDK
         .binaryTarget(
@@ -39,8 +33,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "NuggetApiManager",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.2-ApiManager/ZApiManager.xcframework.zip",
-            checksum: "722d70d3072629f8a51e99b9e2283047204c694c5a3629640d78b74ff0ce9cbf"
+            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/99.0.7-NuggetApiManager/ZApiManager.xcframework.zip",
+            checksum: "c0739d668a823ece16357bd85dbe514b6e3b3ed2063a3dcd46f4e71c124cd7f3"
         ),
         .target(
             name: "NuggetSDK",
@@ -50,9 +44,6 @@ let package = Package(
                 "NuggetFoundation",
                 "NuggetJumbo",
                 "NuggetApiManager",
-                // Products from former NuggetExternalDependency
-                .product(name: "Nuke", package: "Nuke"),
-                .product(name: "Alamofire", package: "Alamofire")
             ]
         ),
         .testTarget(

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NuggetSDK'
-  s.version          = '4.1.0'
+  s.version          = '99.0.7'
   s.summary          = 'The Nugget SDK for iOS.'
   s.description      = <<-DESC
                      A longer description of NuggetSDK.
@@ -14,10 +14,6 @@ Pod::Spec.new do |s|
   s.swift_versions = ['5.0']
 
   s.source_files = 'Sources/NuggetSDK/**/*.swift'
-
-  # External dependencies
-  s.dependency 'Alamofire', '~> 5.10.2'
-  s.dependency 'Nuke', '10.7.1'
   
   # Download and prepare all required XCFrameworks with checksum verification
   s.prepare_command = <<-CMD
@@ -33,8 +29,8 @@ Pod::Spec.new do |s|
     }
 
     echo "Downloading and unzipping Nugget..."
-    curl -L https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/4.1.0-Nugget/Nugget.xcframework.zip -o Nugget.xcframework.zip
-    verify_checksum "Nugget.xcframework.zip" "456ead78330c45d9f7af0db41b67070bfefa12cb6e23c83cc8336d20a9ede7c6"
+    curl -L https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/99.0.7-Nugget/Nugget.xcframework.zip -o Nugget.xcframework.zip
+    verify_checksum "Nugget.xcframework.zip" "ec06c16b2095a42b0cd3f1e78b266541e93b4b4b7904cd3d91747727eedc1110"
     unzip -o Nugget.xcframework.zip
     rm Nugget.xcframework.zip
 
@@ -51,8 +47,8 @@ Pod::Spec.new do |s|
     rm NuggetJumbo.xcframework.zip
 
     echo "Downloading and unzipping ZApiManager..."
-    curl -L https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/0.0.2-ApiManager/ZApiManager.xcframework.zip -o ZApiManager.xcframework.zip
-    verify_checksum "ZApiManager.xcframework.zip" "722d70d3072629f8a51e99b9e2283047204c694c5a3629640d78b74ff0ce9cbf"
+    curl -L https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/99.0.7-NuggetApiManager/ZApiManager.xcframework.zip
+    verify_checksum "ZApiManager.xcframework.zip" "c0739d668a823ece16357bd85dbe514b6e3b3ed2063a3dcd46f4e71c124cd7f3"
     unzip -o ZApiManager.xcframework.zip
     rm ZApiManager.xcframework.zip
   CMD

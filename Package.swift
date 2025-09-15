@@ -15,7 +15,6 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies previously managed by NuggetExternalDependency, now direct
-        .package(url: "https://github.com/patchthecode/JTAppleCalendar", .exact("8.0.5")),
         .package(url: "https://github.com/kean/Nuke.git", .exact("10.7.1")),
         .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.10.2"))
     ],
@@ -23,8 +22,8 @@ let package = Package(
         // Main Nugget binary
         .binaryTarget(
             name: "Nugget",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/4.1.1-Nugget/Nugget.xcframework.zip",
-            checksum: "42e5bb9923e6fa50333d8327a5c50ca7f47ccb4d3f4001c7542557acca253aca"
+            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/4.1.3-Nugget/Nugget.xcframework.zip",
+            checksum: "8a05a105b87ca93a34b5b02981dff425cf2456c4ec003123337c72078a2914a9"
         ),
         // Binary targets previously for NuggetInternalDependency, now direct dependencies for NuggetSDK
         .binaryTarget(

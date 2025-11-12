@@ -56,8 +56,8 @@ public func initializeNuggetFactory(authDelegate: NuggetAuthProviderDelegate,
                                           chatBusinessContextProviderDelegate: chatBusinessContextDelegate,
                                           deeplinkListener: deeplinkListener,
                                           conversationSessionDelegate: conversationSessionDelegate,
-                                          chatComponentProviderDelegate: nil,
-                                          customHeaderManagerDelegate: nil)
+                                          chatComponentProviderDelegate: chatComponentProviderDelegate,
+                                          customHeaderManagerDelegate: customHeaderManagerDelegate)
     nuggetFactory = tempNuggetFactory
     return tempNuggetFactory
 }

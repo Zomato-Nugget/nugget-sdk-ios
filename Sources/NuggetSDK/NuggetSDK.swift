@@ -7,6 +7,10 @@ public typealias NuggetAuthUserInfo = Nugget.ZChatAuthUserInfo
 public typealias NuggetConversationInfo = Nugget.ZChatConversationInfo
 public typealias NuggetChatBusinessContext = Nugget.ZChatBusinessContext
 public typealias NuggetJumboConfiguration = Nugget.NuggetJumboConfiguration
+public typealias NuggetConversationMetaObject = Nugget.ZChatConversationMetaObject
+public typealias NuggetPayloadTokenDataObject = Nugget.ZChatPayloadTokenDataObject
+public typealias NuggetWindowContentType = Nugget.ZChatWindowContentType
+public typealias NuggetConversationFlowType = Nugget.ZChatConversationFlowType
 
 public typealias NuggetAuthProviderDelegate = Nugget.ZChatAuthProviderDelegate
 public typealias NuggetThemeProviderDelegate = Nugget.ZChatCustomThemeProviderDelegate
@@ -15,12 +19,16 @@ public typealias NuggetTicketCreationDelegate = Nugget.ZChatTicketCreationHandle
 public typealias NuggetBusinessContextProviderDelegate = Nugget.ZChatBusinessContextProviderDelegate
 public typealias NuggetSDKConfigurationDelegate = Nugget.NuggetSDKConfigurationDelegate
 public typealias NuggetPushNotificationsListener = Nugget.ZChatPushNotificationsListener
+public typealias NuggetConversationSessionDelegate = Nugget.ZChatConversationSessionDelegate
+public typealias NuggetComponentProviderDelegate = Nugget.ZChatComponentProviderDelegate
+public typealias NuggetExtraParamProviderDelegate = Nugget.ZChatExtraParamProviderDelegate
 public typealias NuggetFontPropertiesMapping = Nugget.FontPropertiesMapping
 public typealias NuggetFontWeights = Nugget.NuggetFontWeights
 public typealias NuggetFontSizes = Nugget.NuggetFontSizes
 public typealias NuggetUserInfo = Nugget.ZChatUserInfo
 public typealias NuggetDeeplinkListener = Nugget.ZChatDeeplinkListener
 public typealias NuggetLanguage = Nugget.NuggetLanguage
+public typealias NuggetCustomViewsEnum = Nugget.ZChatCustomViewsEnum
 
 weak private var nuggetFactory: NuggetFactory?
 
@@ -29,13 +37,16 @@ public func isValidNuggetDeeplink(deeplink: String) -> Bool {
 }
 
 public func initializeNuggetFactory(authDelegate: NuggetAuthProviderDelegate,
-                                    notificationDelegate: NuggetPushNotificationsListener,
                                     sdkConfigurationDelegate: NuggetSDKConfigurationDelegate,
+                                    notificationDelegate: NuggetPushNotificationsListener?, // will be nil for internal clients
                                     chatBusinessContextDelegate: NuggetBusinessContextProviderDelegate? = nil,
                                     deeplinkListener: NuggetDeeplinkListener? = nil,
                                     customThemeProviderDelegate: NuggetThemeProviderDelegate? = nil,
                                     customFontProviderDelegate: NuggetFontProviderDelegate? = nil,
-                                    ticketCreationDelegate: NuggetTicketCreationDelegate? = nil) -> NuggetFactory {
+                                    ticketCreationDelegate: NuggetTicketCreationDelegate? = nil,
+                                    conversationSessionDelegate: NuggetConversationSessionDelegate? = nil,
+                                    chatComponentProviderDelegate: NuggetComponentProviderDelegate? = nil,
+                                    customHeaderManagerDelegate: NuggetExtraParamProviderDelegate? = nil) -> NuggetFactory {
     let tempNuggetFactory = NuggetFactory(authManagerDelegate: authDelegate,
                                           pushNotificationsManager: notificationDelegate,
                                           nuggetSDKConfigurationDelegate: sdkConfigurationDelegate,
@@ -43,7 +54,10 @@ public func initializeNuggetFactory(authDelegate: NuggetAuthProviderDelegate,
                                           customFontProviderDelegate: customFontProviderDelegate,
                                           ticketCreationDelegate: ticketCreationDelegate,
                                           chatBusinessContextProviderDelegate: chatBusinessContextDelegate,
-                                          deeplinkListener: deeplinkListener)
+                                          deeplinkListener: deeplinkListener,
+                                          conversationSessionDelegate: conversationSessionDelegate,
+                                          chatComponentProviderDelegate: nil,
+                                          customHeaderManagerDelegate: nil)
     nuggetFactory = tempNuggetFactory
     return tempNuggetFactory
 }

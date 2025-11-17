@@ -28,7 +28,7 @@ public typealias NuggetFontSizes = Nugget.NuggetFontSizes
 public typealias NuggetUserInfo = Nugget.ZChatUserInfo
 public typealias NuggetDeeplinkListener = Nugget.ZChatDeeplinkListener
 public typealias NuggetLanguage = Nugget.NuggetLanguage
-public typealias NuggetCustomViewsEnum = Nugget.ZChatCustomViewsEnum
+public typealias NuggetMapView = Nugget.ChatMapView
 
 weak private var nuggetFactory: NuggetFactory?
 

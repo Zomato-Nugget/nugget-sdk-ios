@@ -29,6 +29,23 @@ public typealias NuggetUserInfo = Nugget.ZChatUserInfo
 public typealias NuggetDeeplinkListener = Nugget.ZChatDeeplinkListener
 public typealias NuggetLanguage = Nugget.NuggetLanguage
 public typealias NuggetMapView = Nugget.ChatMapView
+public typealias NuggetColorTheme = Nugget.NuggetColorTheme
+public typealias NuggetBackgroundToken = Nugget.NuggetBackgroundToken
+public typealias NuggetBaseColorToken = Nugget.NuggetBaseColorToken
+public typealias NuggetBorderToken = Nugget.NuggetBorderToken
+public typealias NuggetBrandToken = Nugget.NuggetBrandToken
+public typealias NuggetCrystalToken = Nugget.NuggetCrystalToken
+public typealias NuggetDishRatingToken = Nugget.NuggetDishRatingToken
+public typealias NuggetIconToken = Nugget.NuggetIconToken
+public typealias NuggetOutlinedButtonToken = Nugget.NuggetOutlinedButtonToken
+public typealias NuggetResRatingToken = Nugget.NuggetResRatingToken
+public typealias NuggetShimmerToken = Nugget.NuggetShimmerToken
+public typealias NuggetSolidButtonToken = Nugget.NuggetSolidButtonToken
+public typealias NuggetStepperPrimaryToken = Nugget.NuggetStepperPrimaryToken
+public typealias NuggetStepperSecondaryToken = Nugget.NuggetStepperSecondaryToken
+public typealias NuggetSurfaceToken = Nugget.NuggetSurfaceToken
+public typealias NuggetTextButtonToken = Nugget.NuggetTextButtonToken
+public typealias NuggetTextToken = Nugget.NuggetTextToken
 
 weak private var nuggetFactory: NuggetFactory?
 

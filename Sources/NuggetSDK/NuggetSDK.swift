@@ -48,6 +48,7 @@ public typealias NuggetBaseColorToken = Nugget.NuggetBaseColorToken
 public typealias NuggetResRatingToken = Nugget.NuggetResRatingToken
 public typealias NuggetTextToken = Nugget.NuggetTextToken
 public typealias NuggetSDKHelper = Nugget.NuggetSDKHelper
+public typealias NuggetViewControllerProtocol = Nugget.ZChatViewControllerProtocol
 
 weak private var nuggetFactory: NuggetFactory?
 

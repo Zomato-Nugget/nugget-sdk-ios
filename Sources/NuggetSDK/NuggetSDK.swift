@@ -66,7 +66,8 @@ public func initializeNuggetFactory(authDelegate: NuggetAuthProviderDelegate,
                                     ticketCreationDelegate: NuggetTicketCreationDelegate? = nil,
                                     conversationSessionDelegate: NuggetConversationSessionDelegate? = nil,
                                     chatComponentProviderDelegate: NuggetComponentProviderDelegate? = nil,
-                                    customHeaderManagerDelegate: NuggetExtraParamProviderDelegate? = nil) -> NuggetFactory {
+                                    customHeaderManagerDelegate: NuggetExtraParamProviderDelegate? = nil,
+                                    featureFlag: [String : Any] = [:]) -> NuggetFactory {
     let tempNuggetFactory = NuggetFactory(authManagerDelegate: authDelegate,
                                           pushNotificationsManager: notificationDelegate,
                                           nuggetSDKConfigurationDelegate: sdkConfigurationDelegate,
@@ -77,7 +78,8 @@ public func initializeNuggetFactory(authDelegate: NuggetAuthProviderDelegate,
                                           deeplinkListener: deeplinkListener,
                                           conversationSessionDelegate: conversationSessionDelegate,
                                           chatComponentProviderDelegate: chatComponentProviderDelegate,
-                                          customHeaderManagerDelegate: customHeaderManagerDelegate)
+                                          customHeaderManagerDelegate: customHeaderManagerDelegate,
+                                          featureFlagDict: featureFlag)
     nuggetFactory = tempNuggetFactory
     return tempNuggetFactory
 }

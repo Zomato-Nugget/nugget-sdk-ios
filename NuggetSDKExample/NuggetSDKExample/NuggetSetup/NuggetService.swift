@@ -15,8 +15,8 @@ final class NuggetService {
     private var pushNotificationPublisher = NuggetPushNotificationsListener(apnsToken: UserDefaults.standard.string(forKey: "deviceToken"))
     
     lazy var factory = initializeNuggetFactory(authDelegate: self,
-                                               notificationDelegate: pushNotificationPublisher,
                                                sdkConfigurationDelegate: self,
+                                               notificationDelegate: pushNotificationPublisher,
                                                chatBusinessContextDelegate: self,
                                                deeplinkListener: self,
                                                customThemeProviderDelegate: self,

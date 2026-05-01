@@ -17,8 +17,8 @@ let package = Package(
         // Main Nugget binary
         .binaryTarget(
             name: "Nugget",
-            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/4.5.21-Nugget/Nugget.xcframework.zip",
-            checksum: "556d97dcdbf3840d02b7f63d0bcaf8e4f8829d83bd96fe81a07782fe1e8cf4d8"
+            url: "https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/4.5.22-Nugget/Nugget.xcframework.zip",
+            checksum: "5954488446efacdcbb570834ccea34aa5c4381d56389e0fee1fbc89cc10b75ee"
         ),
         .target(
             name: "NuggetSDK",

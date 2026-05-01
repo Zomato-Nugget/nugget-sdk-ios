@@ -69,9 +69,9 @@ extension NuggetService: NuggetBusinessContextProviderDelegate {
         var ticketProperties: [String : [String]]?
         var botProperties: [String : [String]]?
     }
-    
-    func chatSupportBusinessContext() -> any NuggetChatBusinessContext {
-        ChatSupportBusinessContext()
+
+    func chatSupportBusinessContext(completion: @escaping (NuggetBusinessContext) -> Void) {
+        completion(ChatSupportBusinessContext())
     }
 }
 

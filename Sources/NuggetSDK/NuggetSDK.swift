@@ -17,6 +17,7 @@ public typealias NuggetThemeProviderDelegate = Nugget.ZChatCustomThemeProviderDe
 public typealias NuggetFontProviderDelegate = Nugget.ZChatCustomFontProviderDelegate
 public typealias NuggetTicketCreationDelegate = Nugget.ZChatTicketCreationHandlerDelegate
 public typealias NuggetBusinessContextProviderDelegate = Nugget.ZChatBusinessContextProviderDelegate
+public typealias NuggetBusinessContext = Nugget.ZChatBusinessContext
 public typealias NuggetSDKConfigurationDelegate = Nugget.NuggetSDKConfigurationDelegate
 public typealias NuggetPushNotificationsListener = Nugget.ZChatPushNotificationsListener
 public typealias NuggetConversationSessionDelegate = Nugget.ZChatConversationSessionDelegate

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7545E7832DF1800300B56EBC /* NuggetSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 7545E7822DF1800300B56EBC /* NuggetSDK */; };
+		54802FE42FA491AD006AE740 /* NuggetSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 54802FE32FA491AD006AE740 /* NuggetSDK */; };
 		75913C452DF18D460067AE2F /* PlaywriteHU-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75913C442DF18D460067AE2F /* PlaywriteHU-Thin.ttf */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7545E7832DF1800300B56EBC /* NuggetSDK in Frameworks */,
+				54802FE42FA491AD006AE740 /* NuggetSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +133,7 @@
 			);
 			name = NuggetSDKExample;
 			packageProductDependencies = (
-				7545E7822DF1800300B56EBC /* NuggetSDK */,
+				54802FE32FA491AD006AE740 /* NuggetSDK */,
 			);
 			productName = NuggetSDKExample;
 			productReference = 7545E74A2DF17F7B00B56EBC /* NuggetSDKExample.app */;
@@ -218,7 +218,7 @@
 			mainGroup = 7545E7412DF17F7B00B56EBC;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				7545E7812DF1800300B56EBC /* XCRemoteSwiftPackageReference "nugget-sdk-ios" */,
+				54802FE22FA491AD006AE740 /* XCRemoteSwiftPackageReference "nugget-sdk-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7545E74B2DF17F7B00B56EBC /* Products */;
@@ -590,20 +590,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7545E7812DF1800300B56EBC /* XCRemoteSwiftPackageReference "nugget-sdk-ios" */ = {
+		54802FE22FA491AD006AE740 /* XCRemoteSwiftPackageReference "nugget-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Zomato-Nugget/nugget-sdk-ios";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.10;
+				kind = exactVersion;
+				version = 4.5.22;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7545E7822DF1800300B56EBC /* NuggetSDK */ = {
+		54802FE32FA491AD006AE740 /* NuggetSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7545E7812DF1800300B56EBC /* XCRemoteSwiftPackageReference "nugget-sdk-ios" */;
+			package = 54802FE22FA491AD006AE740 /* XCRemoteSwiftPackageReference "nugget-sdk-ios" */;
 			productName = NuggetSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

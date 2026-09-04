@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
     echo "Downloading and unzipping Nugget..."
     curl -L https://github.com/Zomato-Nugget/nugget-sdk-ios/releases/download/4.5.39-Nugget/Nugget.xcframework.zip -o Nugget.xcframework.zip
-    verify_checksum "Nugget.xcframework.zip" "bb1f243546e2bcb625d71aaed6ce2458adb004bcc575e1a37e06f55120f5fb9d"
+    verify_checksum "Nugget.xcframework.zip" "7ecb7fb8d0797a8b09be30f0f2907ac8db676954ffdd05c0d60e5c9fa2cdec84"
     unzip -o Nugget.xcframework.zip
     rm Nugget.xcframework.zip
   CMD
